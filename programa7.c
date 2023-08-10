@@ -2,33 +2,32 @@
 #include <stdlib.h>
 
 int main() {
-double numl, num2;
-printf("lngrese el primer número: ");
+double numl;
+double num2;
+printf("lngrese el primer numero: ");
 if (scanf("%lf", &numl) != 1){
 printf("Error. Ingrese un numero real válido.\n");
 return 1;
 }
-printf("lngrese el segundo número:");
-if (scanf("%lf", &numl) != 1) {
+printf("lngrese el segundo numero:");
+if (scanf("%lf", &num2) != 1) {
 printf("Error. Ingrese un numero real válido.\n");
 return 1;
 }
-
-double sum = numl + num2;
-double resta = numl - num2;
-double multiplicacion = numl * num2;
+double suma = numl + num2;
+double rest = numl - num2;
+double multi = numl * num2;
 
 if (num2 == 0) {
-printf("Error: No se puede dividir entre cero.\n");
+printf("Error. No se puede dividir entre cero.\n");
 return 1;
 }
+double div = numl / num2;
 
-double division = numl / num2;
-
-printf("\nResultados:\n");
-printf("Suma: %.4lf\n", sum);
-printf("Resta: %.4lf\n", resta);
-printf("Multiplicacion: %.4lf\n", multiplicacion);
-printf("Division: %.4lf\n", division);
+printf("\n Resultados \n:");
+printf("Suma: %lf \n", suma);
+printf("resta: %lf \n", rest);
+printf("Multiplicacion: %lf \n", multi);
+printf("Division: %lf \n", div);
 
 }
